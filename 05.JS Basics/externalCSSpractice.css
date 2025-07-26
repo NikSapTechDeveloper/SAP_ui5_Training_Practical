@@ -1,0 +1,7 @@
+    /* Pseudo class practise */
+            img:hover {
+                border: 3px solid black;
+                margin: 5px; 
+            }
+
+            

@@ -1,0 +1,69 @@
+<minion:View xmlns:minion="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+      controllerName="modelIntoController.controller.Main">
+
+ 
+ <!-- We learn here how to bind data from model to view directly -->
+  <!-- bind by value property -->
+   <form:SimpleForm
+        editable="true">  
+
+    <form:content>
+        <Label 
+            text="Emp ID" 
+        />
+
+         
+
+        <Input
+            id="empId"
+            placeholder="Enter ID"
+            width="200px"
+            value="{/empData/empId}"  
+        /> <!-- binding type 1  -->
+
+        <Label 
+            text="Enter your Name" 
+        />
+        <Input
+            id="empName"
+            placeholder="Enter Full Name"
+            width="200px"
+            value="{path :'/empData/empName'}"
+         />  <!--binding type 2, recommended, done by complex binding -->
+
+        <Label 
+            text="Enter your salary" 
+        />
+        <Input
+            id="salary"
+            placeholder="Enter salary"
+            width="200px"
+        />
+
+        <Label 
+            text="Enter marrital status" 
+        />
+        <Input
+            id="MarStatus"
+            placeholder="S/M"
+            width="200px"
+        />
+        <Label
+         text="Smoker"
+        />
+       <CheckBox 
+         id="chkbox"
+         width="20px"
+       
+       />
+        
+    
+        
+    </form:content>
+</form:SimpleForm>
+
+  <Button
+            text="ClickMe"
+            press="callMe"
+        /> 
+</minion:View>

@@ -1,0 +1,61 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+    controllerName="fiori.comp.syz.fa.controller.view1">
+
+    <Page title="View 1">
+      <headerContent>
+      <Button icon="sap-icon://action" press="onNext"></Button>
+      </headerContent>
+
+    <content>
+     <SearchField id="idSearchField" width="10%"></SearchField>
+     <List id="idList1">
+       <items>
+       <!-- only label and value on left and right corner -->
+        <DisplayListItem label="Nikita" value="welcome to the soyuz!" ></DisplayListItem>
+        <!-- display tittle and description top and bottom and an icon -->
+        <StandardListItem title="Avacado" description="The best fruit ever" icon="images/image1.png"></StandardListItem>
+
+        <InputListItem >
+
+           <HBox >
+              <Text text="Hello nikita"></Text>
+              <Input width="60%"></Input>
+            </HBox>
+            <Switch />
+
+        </InputListItem>
+       
+       <CustomListItem >
+         <HBox >
+            <Text text="you can now switch"></Text>
+            <Switch />
+         </HBox>
+       </CustomListItem>
+       
+       <ObjectListItem title="Banana" intro="The best fruit for shake in world" number="500" numberUnit="PC"
+                   icon="images/image.png" numberState="Error" highlightText="Hello" type="Active"
+       >
+
+       <!-- Tasko of inserting text inside ObjectListItem -->
+        <attributes>
+          <ObjectAttribute text="It contain salt" active="true"></ObjectAttribute>
+        </attributes>
+       </ObjectListItem>
+       
+       <!-- PURPOSE: for social media feed like app -->
+       <FeedListItem sender="Nikita" text="Good Morning" timestamp="04-07-2025" info="Simply notify"
+          icon="images/image.png"  
+          ></FeedListItem>
+       <!-- PURPOSE: for clickable action -->
+       <ActionListItem text="Hellllllo" press="onItemAction"></ActionListItem>
+       
+       </items>
+     </List>
+    </content>
+
+
+      <!-- <Button text="Navigating" 
+          press="onNext"
+      /> -->
+    </Page>
+</mvc:View>

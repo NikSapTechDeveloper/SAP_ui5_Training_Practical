@@ -1,0 +1,7 @@
+<minion:View xmlns:minion="sap.ui.core.mvc" xmlns="sap.m"
+           controllerName="miky.controller.Main">
+           <Input placeholder="Enter something" id="input1"></Input>
+           <Button text="Print data" press="doExercise"></Button>
+
+
+</minion:View>

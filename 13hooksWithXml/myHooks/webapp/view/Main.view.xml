@@ -1,0 +1,17 @@
+<minion:View xmlns:minion="sap.ui.core.mvc" xmlns="sap.m" 
+      controllerName="hooks.controller.Main">
+
+   <Label 
+            text="Emp ID" 
+        />
+        <Input
+            id="empId"
+            placeholder="Enter ID"
+            width="200px"
+        />
+
+  <Button   id="btn"
+            text="ClickMe"
+            press="callMe"
+        /> 
+</minion:View>

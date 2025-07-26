@@ -1,0 +1,9 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+    controllerName="fiori.comp.syz.fa.controller.view1">
+
+    <Page title="View 1">
+      <Button text="Navigating" 
+          press="onNext"
+      />
+    </Page>
+</mvc:View>

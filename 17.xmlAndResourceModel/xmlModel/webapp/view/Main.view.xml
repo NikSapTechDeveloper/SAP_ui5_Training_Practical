@@ -1,0 +1,90 @@
+<minion:View xmlns:minion="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+    xmlns:table="sap.ui.table"
+      controllerName="xml.resource.model.practice.controller.Main">
+      
+<!-- extra tell to row binding about /empArray/row is also another node -->
+ <table:Table rows="{/empArray/row}" selectionMode="Single" rowSelectionChange="onSelect">
+    <table:columns>
+      <table:Column label="Employee Name">
+        <table:template>
+          <Text text="{empId}"></Text>
+        </table:template>
+      </table:Column>
+      <table:Column>
+        <table:label>
+          <Text text="Employee ID's"></Text>
+        </table:label>
+        <table:template>
+          <Text text="{empName}"></Text>
+        </table:template>
+      </table:Column>
+    </table:columns>
+    
+ </table:Table>
+
+   <form:SimpleForm
+        id="idSimpleForm"
+        editable="true">  
+
+    <form:content>
+        <Label 
+            text="Emp ID" 
+        />
+
+         
+
+        <Input
+            id="empId"
+            placeholder="Enter ID"
+            width="200px"
+            value="{empId}"  
+        />  
+
+        <Label 
+            text="Enter your Name" 
+        />
+        <Input
+            id="empName"
+            placeholder="Enter Full Name"
+            width="200px"
+            value="{empName}"
+         /> 
+
+        <Label 
+            text="Enter your salary" 
+        />
+        <Input
+            id="salary"
+            placeholder="Enter salary"
+            width="200px"
+            value="{salary}"
+            enabled="{= ${/empData/empName} === 'Anant' ? false : true}"
+         /> 
+
+        <Label 
+            text="Enter marrital status" 
+        />
+        <Input
+            id="MarStatus"
+            placeholder="S/M"
+            width="200px"
+        />
+        <Label
+         text="Smoker"
+        />
+       <CheckBox 
+         id="chkbox"
+         width="20px"
+       
+       />
+        
+    
+        
+    </form:content>
+</form:SimpleForm>
+
+  <Button
+            text="ClickMe"
+            press="callMe"
+        /> 
+</minion:View>

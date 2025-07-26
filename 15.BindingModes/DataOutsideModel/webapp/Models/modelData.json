@@ -1,0 +1,9 @@
+{
+    "empData": {
+        "empName": "John",
+        "empId": 964723,
+        "salary": "10,000",
+        "smoker": false,
+        "marriageStatus": "Single"
+    }
+}

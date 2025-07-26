@@ -1,0 +1,35 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+    controllerName="fiori.comp.syz.fa.controller.view1">
+
+    <Page title="View 1">
+      <headerContent>
+      <Button icon="sap-icon://action" press="onNext"></Button>
+      </headerContent>
+
+    <content>
+     <SearchField id="idSearchField"  search="onSearch"></SearchField>
+     <List id="idList1" itemPress="onItemPress" items="{/fruitData}" >
+       <items>
+     <ObjectListItem type="Navigation" title="{empName}" intro="{empId}" number="{salary}" 
+                   icon="images/image.png"  
+       >
+
+       <!-- Task of inserting text inside ObjectListItem -->
+        <attributes>
+          <ObjectAttribute text="{type}" active="true"></ObjectAttribute>
+            </attributes>
+            <firstStatus>
+            <ObjectStatus text="{status}" state="{path:'status', formatter:'.formatter.getStatus'}"></ObjectStatus>
+            </firstStatus>
+
+           </ObjectListItem>        
+       </items>
+     </List>
+    </content>
+
+
+      <!-- <Button text="Navigating" 
+          press="onNext"
+      /> -->
+    </Page>
+</mvc:View>

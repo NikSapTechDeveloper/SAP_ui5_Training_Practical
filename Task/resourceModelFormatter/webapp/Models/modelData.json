@@ -1,0 +1,44 @@
+{
+    "empData": {
+        "empName": "David",
+        "empId": 964723,
+        "salary": "10,000",
+        "smoker": false,
+        "marriageStatus": "Single"
+    },
+    "empArray": [
+        {
+            "empName": "John",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": false,
+            "marriageStatus": "Single"
+        },
+        {
+            "empName": "Anant",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": true,
+            "marriageStatus": "Single"
+        },
+        {
+            "empName": "Nikita",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": false,
+            "marriageStatus": "Single"
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    ]
+}

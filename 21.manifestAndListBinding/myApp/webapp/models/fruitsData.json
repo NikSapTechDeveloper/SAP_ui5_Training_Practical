@@ -1,0 +1,92 @@
+{
+    "empData": {
+        "empName": "David",
+        "empId": 964723,
+        "salary": "10,000",
+        "smoker": false,
+        "marriageStatus": "Single"
+    },
+    "fruitData": [
+        {
+            "empName": "John",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": false,
+            "type":"citrus",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Available"
+        },
+        {
+            "empName": "AnantJohn",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": true,
+            "type":"Alkaline",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Out of stock"
+        },
+        {
+            "empName": "Nikita",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": false,
+            "type":"berry",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Discontinued"
+        },
+        {
+            "empName": "Ceaser",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": false,
+            "type":"Neutral",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Discontinued"
+        },
+        {
+            "empName": "John Kirti",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": false,
+            "type":"citrus",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Available"
+        },
+        {
+            "empName": "Ticket Ceaser",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": true,
+            "type":"Alkaline",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Out of stock"
+        },
+        {
+            "empName": "Nikita",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": false,
+            "type":"citrus",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Discontinued"
+        },
+        {
+            "empName": "Ceaser",
+            "empId": 964723,
+            "salary": "10,000",
+            "smoker": false,
+            "type":"Neutral",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Discontinued"
+        }
+
+    ]
+}

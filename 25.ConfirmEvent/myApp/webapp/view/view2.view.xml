@@ -1,0 +1,46 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form='sap.ui.layout.form'
+    xmlns:more="sap.ui.core"
+    controllerName="fiori.comp.syz.fa.controller.view2">
+
+    <Page title="{empName}" showNavButton="true" navButtonPress="goBack"> 
+    <form:SimpleForm editable="true">
+     <Label text="Status"></Label>
+      <Text text="{path:'status', formatter:'.formatter.getStatus'}"></Text>
+    </form:SimpleForm> 
+     
+      <ObjectHeader intro="{empId}" title="{empName}" icon="{image}"></ObjectHeader>
+      
+      <IconTabBar>
+         <items>
+           <IconTabFilter icon="sap-icon://appointment" text="Appointment">
+              <more:Fragment fragmentName="fiori.comp.syz.fa.fragment.moreInfo" type="XML"></more:Fragment>
+           </IconTabFilter>
+           <IconTabFilter icon="sap-icon://attachment" text="Attach a file">
+             <more:Fragment fragmentName="fiori.comp.syz.fa.fragment.attachment" type = "XML"></more:Fragment>
+           
+           </IconTabFilter>
+           <IconTabFilter icon="sap-icon://bell" text="Notify">
+             <Select items="{/cities}">
+                <items>
+                  <core:Item key="{name}" text="{name}"></core:Item>
+                </items>             
+             </Select>
+           </IconTabFilter>
+
+         </items>
+      
+      </IconTabBar>
+      
+      <footer>
+       <Toolbar> 
+          <ToolbarSpacer />
+          <Button text="Save" type="Accept" press="onSave"></Button>
+          <Button text="Cancel" type="Reject" press="onCancel"></Button>
+
+       </Toolbar>
+      
+      </footer>
+      
+        <!-- <Button text="goBack" press="goBack"></Button> -->
+    </Page>
+</mvc:View>

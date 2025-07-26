@@ -1,0 +1,60 @@
+<html>
+    <head>
+       <script src ="https://ui5.sap.com/resources/sap-ui-core.js",
+         data-sap-ui-libs="sap.m"
+         data-sap-ui-theme="sap_fiori_3_dark"
+         data-sap-ui-resourceroots='{
+            "mouse":"./"
+         }'
+    ></script>
+<script>
+
+  var uInput = new sap.m.Input("idInpt",{
+    placeholder:"Enter name"
+  })
+
+
+  var uPass = new sap.m.Input("idPass",{
+    placeholder:"Enter Password"
+  })
+
+uInput.placeAt("userInput");
+uPass.placeAt("Password");
+    var oBtn = new sap.m.Button("idBtn",{
+        text:"login",
+        press:function(){
+            //making object of running app
+            var oApp = sap.ui.getCore();
+            //taking input of user name
+            var uIn = oApp.byId("idInpt");
+            //extracting value of user name
+            var oUIN = uIn.getValue();
+
+            var uPswrd = oApp.byId("idPass");
+            //extracting value of user name
+            var oUPASS = uPswrd.getValue();
+
+            if(oUIN === oUPASS){
+                alert("Login success");
+            }else{
+                alert("oops! credentials not match");
+            }
+            
+        }
+    })
+    oBtn.placeAt("content");
+</script>
+
+    </head>
+    <body class="sapUiBody">
+        <div id="userInput">
+            <br>
+            <h3>Enter your Name :</h3>
+        </div>
+        <div id="Password">
+            <h3>Enter your Password :</h3>
+        </div>
+        <br>
+       <div id="content" style="padding-left: 700px;"></div>
+    </body>
+</html>

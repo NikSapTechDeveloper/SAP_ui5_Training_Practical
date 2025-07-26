@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<data>
+   <empArray>
+      <row>
+        <empName>Alias</empName>
+        <empId>2001</empId>
+        <salary>10,000</salary>
+      </row>
+      <row>
+        <empName>Wicks</empName>
+        <empId>2002</empId>
+        <salary>20,000</salary>
+      </row>
+      <row>
+        <empName>Thrilson</empName>
+        <empId>2003</empId>
+        <salary>30,000</salary>
+      </row>
+   
+   
+   </empArray>
+</data>

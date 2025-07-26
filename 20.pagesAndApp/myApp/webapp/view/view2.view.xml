@@ -1,0 +1,7 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+    controllerName="fiori.comp.syz.fa.controller.view2">
+
+    <Page title="View 2" showNavButton="true" navButtonPress="goBack">  
+        <!-- <Button text="goBack" press="goBack"></Button> -->
+    </Page>
+</mvc:View>

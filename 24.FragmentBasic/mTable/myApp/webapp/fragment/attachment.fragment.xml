@@ -1,0 +1,49 @@
+<more:FragmentDefinition xmlns:more="sap.ui.core" xmlns="sap.m">
+  <Table id="idTable" mode="SingleSelect" items="{/fruitData}">
+    <headerToolbar>
+       <Toolbar >
+         <ToolbarSpacer />  
+         <Button icon="sap-icon://filter" tooltip = "Filter Data" press = "onFilter"></Button>
+       </Toolbar>
+    </headerToolbar>
+                <columns>
+                  <Column >
+                    <header>
+                      <Label text="Name"></Label>
+                    </header>
+                  </Column>
+                  <Column >
+                    <header>
+                      <Label text="City"></Label>
+                    </header>
+                  </Column>
+                  <Column >
+                    <header>
+                      <Label text="Id"></Label>
+                    </header>
+                  </Column>
+                  <Column minScreenWidth="Tablet">
+                    <header>
+                      <Label text="salary"></Label>
+                    </header>
+                  </Column>
+                </columns>
+                <items>
+                  <ColumnListItem >
+                    <cells>
+                      <Text text="{empName}"></Text>
+                    </cells>
+                    <cells>
+                      <Input value="{empId}" showValueHelp="true" valueHelpRequest="onF4help"></Input>
+                    </cells>
+                    <cells>
+                      <Text text="{empId}"></Text>
+                    </cells>
+                    <cells>
+                      <Text text="{salary}"></Text>
+                    </cells>
+                  </ColumnListItem>
+                </items>
+             
+             </Table>
+</more:FragmentDefinition>

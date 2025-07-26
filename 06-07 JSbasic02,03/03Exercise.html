@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .spiderman {
+                margin-top: 0px;
+                border: 5px solid black;
+                text-align: center;
+                background-color: blueviolet;
+            }
+            p {
+                padding: 10px;
+            }
+
+            .avangers {
+               border:1px solid black;
+               width: fit-content;
+               margin: 10px;
+               background-color: yellow;
+            }
+        </style>
+         <script>
+            // named function practise
+            function myFirstFunction(item){
+                // alert('welcome you click ' + item);            /* Type 1 of output*/
+                // console.log('welcome you click ' + item);              /* see in console Type 2 of output */
+                // var oLabel = document.getElementById("printing");
+                // oLabel.innerText = "Welcome to JS with 3rd kind of output by clicking " + item;
+                document.write("It replace complete HTML by clicking "+ item);
+
+                window.open("https://www.google.com/");
+
+                // This is the fourth kind of output we are use here
+                
+            }
+            
+            function myLogin(){
+                var oUser = document.getElementById("user"); //getting values from fields
+                var oPass =  document.getElementById("pass"); //you can also remove chaining from here
+                var sUser = oUser.value;//extracting values
+                var sPass = oPass.value;
+                if(sUser === sPass){ //comapring and action
+                    document.write("Woww! you are successfully login."); // completely replace dom when success
+                }else{
+                    throwTheMessage("No your credentials not match! but working with key");
+                    //leave inside this page and showing when not success.
+                }
+            }
+
+            function throwTheMessage(key){
+                var oLabel = document.getElementById("printing");
+                oLabel.innerText = key; 
+            }
+
+            function magic(){
+                var aHeaderElement = document.getElementsByClassName("spiderman");
+                for(var i =0;i<aHeaderElement.length;i++){
+                    var oHeaderElement = aHeaderElement[i];
+
+                 //i solve this toggle like that   
+                    if(oHeaderElement.style.color == "white" && oHeaderElement.style.backgroundColor == "green"){
+                    oHeaderElement.style.color = "black";
+                    oHeaderElement.style.backgroundColor = "blueviolet";
+                    }else{
+                    oHeaderElement.style.color = "white";
+                    oHeaderElement.style.backgroundColor = "green";
+                    }
+                    
+                }
+            }
+         </script>
+    </head>
+    <body>
+        <div class="avangers">
+            <div class="spiderman">
+                <h1>i am css</h1>
+            </div>
+            <div class ="ironman">
+                <p>Yes i am an spiderman paragraph</p>
+            </div>
+        </div>
+        <div class="avangers">
+            <div class="spiderman">
+                <h1>i am css</h1>
+            </div>
+            <div class ="ironman">
+                <p>Yes i am an spiderman paragraph</p>
+            </div>
+        </div>
+        
+
+        <label>user input</label>
+        <input id="user">
+        <br>
+        <label>password</label>
+        <input id ="pass" type="password">
+        <br>
+        <button onclick="magic()">magic</button>
+        <button onclick="myLogin()">Login</button>
+        <button onclick="myFirstFunction(id)" id="button 1">clickme</button>
+        <button onclick="myFirstFunction(id)" id="button 2">clickmeToo</button>
+        <label id ="printing"></label>
+
+
+    </body>
+</html>

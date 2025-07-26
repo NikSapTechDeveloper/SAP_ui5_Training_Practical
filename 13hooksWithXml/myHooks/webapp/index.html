@@ -1,0 +1,26 @@
+<html>
+    <head>
+   <script src="https://ui5.sap.com/resources/sap-ui-core.js"
+         data-sap-ui-libs="sap.m"
+         data-sap-ui-theme="sap_fiori_3_dark"
+         data-sap-ui-resourceroots='{
+            "hooks":"./"
+         }'
+   
+   ></script>
+   <script>
+    var oView = new sap.ui.view({
+        viewName:"hooks.view.Main",
+        type:"XML",
+        id:"oXmlView"
+    })
+
+    oView.placeAt("content");
+   </script>
+    </head>
+    <body class="sapUiBody">
+      <div id="content">
+        <h1>Welcome Hello</h1>
+      </div>
+    </body>
+</html>

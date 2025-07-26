@@ -1,0 +1,59 @@
+<minion:View xmlns:minion="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+      controllerName="aggregation.controller.Main">
+
+<!-- simple form aggregation used here -->
+   <!-- Exercise to align them well, editable property -->
+   <form:SimpleForm
+        editable="true">  
+
+        <!-- content is an default aggregation,
+          it also by default apply either if we not write it manually
+          but best practice says to write -->
+    <form:content>  
+    
+        <Label 
+            text="Emp ID" 
+        />
+        <Input
+            id="empId"
+            placeholder="Enter ID"
+            width="200px"
+        
+        />
+
+        <Label 
+            text="Enter your Name" 
+        />
+        <Input
+            id="empName"
+            placeholder="Enter Full Name"
+            width="200px"
+        />
+
+        <Label 
+            text="Enter your salary" 
+        />
+        <Input
+            id="salary"
+            placeholder="Enter salary"
+            width="200px"
+        />
+        <Label
+         text="Smoker"
+        />
+       <CheckBox 
+         id="chkbox"
+         width="20px"
+       
+       />
+        
+    
+        
+    </form:content>
+</form:SimpleForm>
+
+  <Button
+            text="ClickMe"
+            press="callMe"
+        /> 
+</minion:View>

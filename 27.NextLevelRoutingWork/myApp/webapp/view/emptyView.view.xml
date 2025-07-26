@@ -1,0 +1,8 @@
+<empty:View xmlns:empty="sap.ui.core.mvc" xmlns="sap.m"
+   controllerName="fiori.comp.syz.fa.controller.emptyView">
+   <Page title="Welcome">
+       
+    <ObjectListItem title="Explore what you want" intro="Hello motu..." ></ObjectListItem>
+
+   </Page>
+</empty:View>

@@ -1,0 +1,17 @@
+<!-- <popover:View xmlns:popover="sap.ui.core.mvc" xmlns="sap.m">
+    
+</popover:View> -->
+
+<mvc:View
+	controllerName="task.controller.Main"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+			<Button
+				text="Show Popover"
+				press="onPress"
+				 />
+			<Button press=".handleResizablePopoverPress"
+					text="Show Resizable Popover"
+                     />
+	
+</mvc:View>

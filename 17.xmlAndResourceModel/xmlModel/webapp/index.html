@@ -1,0 +1,28 @@
+<html>
+    <head>
+       <script src="https://ui5.sap.com/resources/sap-ui-core.js"
+       data-sap-ui-libs="sap.m"
+       data-sap-ui-theme="sap_fiori_3_dark"
+       data-sap-ui-resourceroots='{
+        "xml.resource.model.practice":"./"
+       }'
+       
+       data-sap-ui-bindingSyntax="complex"
+         ></script>
+      <script>
+        let oView = new sap.ui.view({
+            viewName :"xml.resource.model.practice.view.Main",
+            type:"XML",
+            id:"idXmlView"
+        })
+
+        oView.placeAt("content");
+      </script>
+       
+    </head>
+    <body class="sapUiBody">
+   <div id="content">
+    <h1>Welcome</h1>
+   </div>
+    </body>
+</html>

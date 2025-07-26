@@ -1,0 +1,17 @@
+{
+  "name": "myfirstproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "first",
+    "ui5",
+    "fiori",
+    "sap"
+  ],
+  "author": "AN",
+  "license": "ISC",
+  "description": ""
+}
