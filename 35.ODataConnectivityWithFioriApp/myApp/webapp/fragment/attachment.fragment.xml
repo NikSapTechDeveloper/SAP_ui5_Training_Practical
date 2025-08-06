@@ -1,10 +1,9 @@
 <more:FragmentDefinition xmlns:more="sap.ui.core" xmlns="sap.m">
-  <Table id="idTable" mode="SingleSelectMaster" items="{/fruitData}" itemPress="onItemPressSupp" >
+  <Table id="idTable" mode="SingleSelect" items="{/fruitData}">
     <headerToolbar>
        <Toolbar >
          <ToolbarSpacer />  
          <Button icon="sap-icon://filter" tooltip = "Filter Data" press = "onFilter"></Button>
-         <Button icon="sap-icon://clear-filter" tooltip="Remove Filters" press ="onRemoveFilter"/>
        </Toolbar>
     </headerToolbar>
                 <columns>
@@ -30,7 +29,7 @@
                   </Column>
                 </columns>
                 <items>
-                  <ColumnListItem type="Navigation">
+                  <ColumnListItem >
                     <cells>
                       <Text text="{empName}"></Text>
                     </cells>

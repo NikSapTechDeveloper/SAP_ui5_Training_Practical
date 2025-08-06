@@ -16,18 +16,7 @@
             "type":"citrus",
             "image" : "images/image.png",
             "marriageStatus": "Single",
-            "status":"Available",
-            "suppFruits":[
-               {
-                  "name":"Banana",
-                  "quantity":120
-               },{
-                  "name":"Apple",
-                  "quantity":140
-               },{
-                  "name":"Mango",
-                  "quantity":300
-               }]
+            "status":"Available"
         },
         {
             "empName": "AnantJohn",
@@ -38,18 +27,7 @@
             "type":"Alkaline",
             "image" : "images/image.png",
             "marriageStatus": "Single",
-            "status":"Out of stock",
-            "suppFruits":[
-               {
-                  "name":"Banana",
-                  "quantity":110
-               },{
-                  "name":"Apple",
-                  "quantity":190
-               },{
-                  "name":"Mango",
-                  "quantity":280
-               }]
+            "status":"Out of stock"
         },
         {
             "empName": "Nikita",
@@ -60,18 +38,7 @@
             "type":"berry",
             "image" : "images/image.png",
             "marriageStatus": "Single",
-            "status":"Discontinued",
-            "suppFruits":[
-               {
-                  "name":"Banana",
-                  "quantity":520
-               },{
-                  "name":"Apple",
-                  "quantity":400
-               },{
-                  "name":"Mango",
-                  "quantity":900
-               }]
+            "status":"Discontinued"
         },
         {
             "empName": "Ceaser",
@@ -82,18 +49,7 @@
             "type":"Neutral",
             "image" : "images/image.png",
             "marriageStatus": "Single",
-            "status":"Discontinued",
-            "suppFruits":[
-               {
-                  "name":"Banana",
-                  "quantity":567
-               },{
-                  "name":"Apple",
-                  "quantity":834
-               },{
-                  "name":"Mango",
-                  "quantity":928
-               }]
+            "status":"Discontinued"
         },
         {
             "empName": "John Kirti",
@@ -104,18 +60,7 @@
             "type":"citrus",
             "image" : "images/image.png",
             "marriageStatus": "Single",
-            "status":"Available",
-            "suppFruits":[
-               {
-                  "name":"Banana",
-                  "quantity":278
-               },{
-                  "name":"Apple",
-                  "quantity":265
-               },{
-                  "name":"Mango",
-                  "quantity":590
-               }]
+            "status":"Available"
         },
         {
             "empName": "Ticket Ceaser",
@@ -126,18 +71,7 @@
             "type":"Alkaline",
             "image" : "images/image.png",
             "marriageStatus": "Single",
-            "status":"Out of stock",
-            "suppFruits":[
-               {
-                  "name":"Banana",
-                  "quantity":120
-               },{
-                  "name":"Apple",
-                  "quantity":140
-               },{
-                  "name":"Mango",
-                  "quantity":300
-               }]
+            "status":"Out of stock"
         },
         {
             "empName": "Nikita",
@@ -149,18 +83,6 @@
             "image" : "images/image.png",
             "marriageStatus": "Single",
             "status":"Discontinued"
-            ,
-            "suppFruits":[
-               {
-                  "name":"Banana",
-                  "quantity":120
-               },{
-                  "name":"Apple",
-                  "quantity":140
-               },{
-                  "name":"Mango",
-                  "quantity":300
-               }]
         },
         {
             "empName": "Ceaser",
@@ -172,18 +94,6 @@
             "image" : "images/image.png",
             "marriageStatus": "Single",
             "status":"Discontinued"
-            ,
-            "suppFruits":[
-               {
-                  "name":"Banana",
-                  "quantity":120
-               },{
-                  "name":"Apple",
-                  "quantity":140
-               },{
-                  "name":"Mango",
-                  "quantity":300
-               }]
         }
 
     ],

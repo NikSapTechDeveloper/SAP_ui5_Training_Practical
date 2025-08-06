@@ -79,17 +79,13 @@ sap.ui.define(['fiori/comp/syz/fa/controller/BaseController','sap/m/MessageBox',
 
             },
            onConfirmPopup :function(oEvent){
-            // let sId = oEvent.getSource().getId();
-            let oSelectedItems = oEvent.getParameter("selectedItem");
+            let sId = oEvent.getSource().getId();
+            
+            if(sId.indexOf("idOnF4Help") != -1){
+             let oSelectedItems = oEvent.getParameter("selectedItem");
             let sText = oSelectedItems.getTitle();
             this.oField.setValue(sText);
-            // if(sId.indexOf("fruitData") != -1){
-            //  let oSelectedItems = oEvent.getParameter("selectedItem");
-            // let sText = oSelectedItems.getTitle();
-            // this.oField.setValue(sText);
-            // }else{
-
-            // }
+            }
             
            }
         });

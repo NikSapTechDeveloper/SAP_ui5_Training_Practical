@@ -8,6 +8,7 @@ sap.ui.define(['fiori/comp/syz/fa/controller/BaseController','sap/m/MessageBox',
             herculis:function(oEvent){
           
             // let ofruitName = oEvent.getParameter("arguments").fruitName;
+            debugger;
             
              let ofruitId = oEvent.getParameter("arguments").fruitId;
              var sPath = "/fruitData/" + ofruitId;

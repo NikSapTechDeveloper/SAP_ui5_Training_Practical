@@ -1,0 +1,7 @@
+ <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m"
+     controllerName="fiori.comp.syz.fa.controller.App">
+
+  <!-- container control :- app container controll -->
+  <SplitApp id= "idApp"></SplitApp>
+
+</mvc:View>

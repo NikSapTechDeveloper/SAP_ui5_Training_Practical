@@ -2,7 +2,8 @@
    controllerName="fiori.comp.syz.fa.controller.emptyView">
    <Page title="Welcome">
        
-    <ObjectListItem title="Explore what you want" intro="Hello motu..." ></ObjectListItem>
+    <!-- <ObjectListItem title="Explore what you want" intro="Hello motu..." ></ObjectListItem> -->
+    <Image src="images/welcome.png" height="100%"  width="100%"></Image>
 
    </Page>
 </empty:View>

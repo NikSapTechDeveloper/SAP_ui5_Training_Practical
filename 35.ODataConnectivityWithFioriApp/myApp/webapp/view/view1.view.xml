@@ -1,0 +1,60 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="fiori.comp.syz.fa.controller.view1"
+>
+    <Page title="View 1">
+        <headerContent>
+            <Button
+                icon="sap-icon://action"
+                press="onNext"
+            />
+        </headerContent>
+
+        <content>
+            <SearchField
+                id="idSearchField"
+                search="onSearch"
+            />
+            <List
+                id="idList1"
+                itemPress="onItemPress"
+                items="{/ProductSet}"
+                mode="SingleSelectMaster"
+                growing="true"
+                growingThreshold="20"
+                growingScrollToLoad="true"
+                busyIndicatorDelay="0"
+            >
+                <items>
+                    <ObjectListItem
+                        type="Navigation"
+                        title="{PRODUCT_ID}"
+                        intro="{CATEGORY}"
+                        number="{PRICE}"
+                        numberUnit="{CURRENCY_CODE}"
+                        icon="images/image.png"
+                    >
+                        <!-- Task of inserting text inside ObjectListItem -->
+                        <attributes>
+                            <ObjectAttribute
+                                text="{DESCRIPTION}"
+                                active="true"
+                            />
+                        </attributes>
+                        <firstStatus>
+                            <ObjectStatus
+                                text="{SUPPLIER_NAME}"
+                                state="{path:'status', formatter:'.formatter.getStatus'}"
+                            />
+                        </firstStatus>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+
+        <!-- <Button text="Navigating" 
+          press="onNext"
+      /> -->
+    </Page>
+</mvc:View>

@@ -1,4 +1,4 @@
-  <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form='sap.ui.layout.form'
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form='sap.ui.layout.form'
     xmlns:more="sap.ui.core"
     controllerName="fiori.comp.syz.fa.controller.view2">
 

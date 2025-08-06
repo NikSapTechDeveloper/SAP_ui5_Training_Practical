@@ -8,7 +8,7 @@
 
     <content>
      <SearchField id="idSearchField"  search="onSearch"></SearchField>
-     <List id="idList1" itemPress="onItemPress" items="{/fruitData}" mode="SingleSelectMaster" >
+     <List id="idList1" itemPress="onItemPress" items="{/fruitData}" mode="SingleSelect" >
        <items>
      <ObjectListItem type="Navigation" title="{empName}" intro="{empId}" number="{salary}" 
                    icon="images/image.png"  

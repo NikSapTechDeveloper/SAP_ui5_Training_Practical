@@ -10,6 +10,7 @@ sap.ui.define(['fiori/comp/syz/fa/controller/BaseController','sap/ui/model/Filte
              oAppCon.to("idView2");
             },
             onSearch:function(oEvent){
+            
                 var sQuery = oEvent.getParameter("query");
                 var oFilter1 = new Filter("empName",FilterOperator.Contains,sQuery);
                 var oFilter2 = new Filter("type",FilterOperator.Contains,sQuery);
@@ -28,6 +29,7 @@ sap.ui.define(['fiori/comp/syz/fa/controller/BaseController','sap/ui/model/Filte
                 oVar.removeItem(oItemToBeDeleted);
             },
             onItemPress : function(oEvent){
+                debugger;
                 let oList = oEvent.getParameter("listItem").getBindingContextPath();
                 let oV2 = this.getView().getParent().getParent().getDetailPage("idView2");
                 oV2.bindElement(oList);

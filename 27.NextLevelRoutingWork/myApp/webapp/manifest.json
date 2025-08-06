@@ -6,15 +6,6 @@
         "applicationVersion": {
             "version": "1.0.0"
         },
-        "dataSources": {
-            "nikitaOdataService":{
-                "uri": "/sap/opu/odata/sap/ZNIKITA_ODATA_SRV",
-                "type": "OData",
-                "settings": {
-                    "odataVersion": "2.0"
-                }
-            }
-        },
         "title": "{{appTitle}}",
         "description": "{{appDescription}}",
         "i18n": "i18n/i18n.properties"
@@ -68,9 +59,14 @@
                    "target":["Master","WelcomeDetail"]
                 },
                 {
-                    "pattern": "fruit/{fruitName}/{fruitId}",
+                    "pattern": "fruit/{fruitId}",
                     "name": "view2",
                     "target":["Master","Detail"]
+                },
+                {
+                    "pattern": "supplier/:suppId:",
+                    "name": "view3",
+                    "target":["Master","DetailDrillDwon"]
                 }
             ],
             "targets": {
@@ -88,17 +84,16 @@
                     "viewId": "idView2",
                     "viewName": "view2",
                     "controlAggregation": "detailPages"
+                },
+                "DetailDrillDwon":{
+                    "viewId": "idView3",
+                    "viewName": "view3",
+                    "controlAggregation": "detailPages"
                 }
             }
         },
         "models": {
-             "":{
-                "type": "sap.ui.model.odata.v2.ODataModel",
-                "dataSource": "nikitaOdataService",
-                "settings": {}
-             },
-
-            "jsonModel": {
+            "": {
                 "type": "sap.ui.model.json.JSONModel",
                 "uri": "models/fruitsData.json",
                 "preload": true,
