@@ -1,0 +1,7 @@
+<empty:View xmlns:empty="sap.ui.core.mvc" xmlns="sap.m"
+   controllerName="fiori.comp.syz.fa.controller.emptyView">
+   <Page title="Welcome">
+       
+<Image src="images/welcome.png" height="100%"  width="100%"></Image>
+   </Page>
+</empty:View>

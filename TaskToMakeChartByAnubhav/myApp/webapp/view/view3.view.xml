@@ -1,0 +1,45 @@
+<mvc:View
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:form='sap.ui.layout.form'
+    xmlns:more="sap.ui.core"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    controllerName="fiori.comp.syz.fa.controller.view3"
+>
+    <Page
+        title="{empName}"
+        showNavButton="true"
+        navButtonPress="onBackHistoryNav"
+    >
+        <ObjectHeader
+            title="{empName}"
+            intro="{empId} "
+            number="{salary}"
+            numberUnit="{type}"
+            icon="images/image1.png"
+        />
+
+        <viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}"
+                height='100%' width="100%" vizType='pie' legendVisible="true">
+                
+                <viz:dataset>
+                   <viz.data:FlattenedDataset data ="{suppFruits}">
+                       <viz.data:dimensions>
+                         <viz.data:DimensionDefinition name="Name" value="{name}"></viz.data:DimensionDefinition>
+                       </viz.data:dimensions>
+                       <viz.data:measures>
+                         <viz.data:MeasureDefinition name="Quantity" value="{quantity}"></viz.data:MeasureDefinition>
+                       </viz.data:measures>
+                   </viz.data:FlattenedDataset>
+                </viz:dataset>
+
+                <viz:feeds>
+                   <viz.feeds:FeedItem uid="size" type="Measure" values="Quantity"></viz.feeds:FeedItem>
+                   <viz.feeds:FeedItem uid="color" type="Dimension" values="Name"></viz.feeds:FeedItem>
+                </viz:feeds>
+                </viz:VizFrame>
+    </Page>
+</mvc:View>

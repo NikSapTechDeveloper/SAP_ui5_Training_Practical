@@ -1,0 +1,236 @@
+{
+    "empData": {
+        "empName": "David",
+        "empId": 964723,
+        "salary": "10,000",
+        "smoker": false,
+        "marriageStatus": "Single"
+    },
+    "fruitData": [
+        {
+            "empName": "John",
+            "empId": 964723,
+            "city":"Sikar",
+            "salary": "10,000",
+            "smoker": false,
+            "type":"citrus",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Available",
+            "suppFruits":[
+               {
+                  "name":"Banana",
+                  "quantity":120
+               },{
+                  "name":"Apple",
+                  "quantity":140
+               },{
+                  "name":"Mango",
+                  "quantity":300
+               }]
+        },
+        {
+            "empName": "AnantJohn",
+            "empId": 964723,
+            "city":"Sikar",
+            "salary": "10,000",
+            "smoker": true,
+            "type":"Alkaline",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Out of stock",
+            "suppFruits":[
+               {
+                  "name":"Banana",
+                  "quantity":110
+               },{
+                  "name":"Apple",
+                  "quantity":190
+               },{
+                  "name":"Mango",
+                  "quantity":280
+               }]
+        },
+        {
+            "empName": "Nikita",
+            "empId": 964723,
+            "city":"Sikar",
+            "salary": "10,000",
+            "smoker": false,
+            "type":"berry",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Discontinued",
+            "suppFruits":[
+               {
+                  "name":"Banana",
+                  "quantity":520
+               },{
+                  "name":"Apple",
+                  "quantity":400
+               },{
+                  "name":"Mango",
+                  "quantity":900
+               }]
+        },
+        {
+            "empName": "Ceaser",
+            "empId": 964723,
+            "city":"Jaipur",
+            "salary": "10,000",
+            "smoker": false,
+            "type":"Neutral",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Discontinued",
+            "suppFruits":[
+               {
+                  "name":"Banana",
+                  "quantity":567
+               },{
+                  "name":"Apple",
+                  "quantity":834
+               },{
+                  "name":"Mango",
+                  "quantity":928
+               }]
+        },
+        {
+            "empName": "John Kirti",
+            "empId": 964723,
+            "city":"Sikar",
+            "salary": "10,000",
+            "smoker": false,
+            "type":"citrus",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Available",
+            "suppFruits":[
+               {
+                  "name":"Banana",
+                  "quantity":278
+               },{
+                  "name":"Apple",
+                  "quantity":265
+               },{
+                  "name":"Mango",
+                  "quantity":590
+               }]
+        },
+        {
+            "empName": "Ticket Ceaser",
+            "empId": 964723,
+            "city":"Sikar",
+            "salary": "10,000",
+            "smoker": true,
+            "type":"Alkaline",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Out of stock",
+            "suppFruits":[
+               {
+                  "name":"Banana",
+                  "quantity":120
+               },{
+                  "name":"Apple",
+                  "quantity":140
+               },{
+                  "name":"Mango",
+                  "quantity":300
+               }]
+        },
+        {
+            "empName": "Nikita",
+            "empId": 964723,
+            "city":"Sikar",
+            "salary": "10,000",
+            "smoker": false,
+            "type":"citrus",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Discontinued"
+            ,
+            "suppFruits":[
+               {
+                  "name":"Banana",
+                  "quantity":120
+               },{
+                  "name":"Apple",
+                  "quantity":140
+               },{
+                  "name":"Mango",
+                  "quantity":300
+               }]
+        },
+        {
+            "empName": "Ceaser",
+            "empId": 964723,
+            "city":"Sikar",
+            "salary": "10,000",
+            "smoker": false,
+            "type":"Neutral",
+            "image" : "images/image.png",
+            "marriageStatus": "Single",
+            "status":"Discontinued"
+            ,
+            "suppFruits":[
+               {
+                  "name":"Banana",
+                  "quantity":120
+               },{
+                  "name":"Apple",
+                  "quantity":140
+               },{
+                  "name":"Mango",
+                  "quantity":300
+               }]
+        }
+
+    ],
+    "cities":[
+     {
+        "name":"Sikar"
+     },
+     {
+        "name":"Pune"
+     },
+     {
+        "name":"Banglore"
+     },
+     {
+        "name":"Mumbai"
+     },
+     {
+        "name":"Jaipur"
+     },
+     {
+        "name":"Patna"
+     },
+     {
+        "name":"Surat"
+     },
+     {
+        "name":"Indore"
+     },
+     {
+        "name":"Ujjain"
+     },
+     {
+        "name":"Delhi"
+     },
+     {
+        "name":"Bikaner"
+     },
+     {
+        "name":"Nagaur"
+     },
+     {
+        "name":"Kashmir"
+     },
+     {
+        "name":"LehDakh"
+     }
+
+
+    ] 
+}
