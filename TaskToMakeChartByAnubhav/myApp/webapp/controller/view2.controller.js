@@ -132,7 +132,8 @@ sap.ui.define(['fiori/comp/syz/fa/controller/BaseController','sap/m/MessageBox',
             
            },
            onItemPressSupp:function(oEvent){
-              var sPath = oEvent.getParameter("listItem").getBindingContextPath();
+            debugger;
+              var sPath = oEvent.getParameter("listItem").getBindingContext().sPath;
               var sIndex = sPath.split("/")[sPath.split("/").length-1];
                this.oRouter.navTo("view3",{
                     suppId : sIndex

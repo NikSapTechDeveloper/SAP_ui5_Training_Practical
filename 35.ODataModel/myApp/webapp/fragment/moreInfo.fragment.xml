@@ -1,0 +1,30 @@
+<more:FragmentDefinition xmlns:more="sap.ui.core" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+   <form:SimpleForm>
+                 <form:content>
+                 <more:Title text="Product data"></more:Title>
+                   <Label text="Product name"></Label>
+                   <Text text="{NAME}"></Text>
+                   <Label text="Product Id"></Label>
+                   <Text text="{PRODUCT_ID}"></Text>
+                   <Label text="Product price"></Label>
+                   <Text text="{PRICE}"></Text>
+                   <Label text="Product status"></Label>
+                   <Text text="{DESCRIPTION}"></Text>
+                   <Label text="Product Label"></Label>
+                   <Text text="{CURRENCY_CODE}"></Text>
+                   <Label text="Product type"></Label>
+                   <Text text="{CATEGORY}"></Text>
+                 <more:Title text="Supplier Data"></more:Title>
+                    <Label text="City"></Label>
+                   <Text text="{To_Supplier/CITY}"></Text>
+                    <Label text="Company name"></Label>
+                   <Text text="{To_Supplier/COMPANY_NAME}"></Text>
+                    <Label text="Phone number"></Label>
+                   <Text text="{To_Supplier/PHONE_NUMBER}"></Text>
+                    <Label text="E-mail"></Label>
+                   <Text text="{To_Supplier/EMAIL_ADDRESS}"></Text>
+
+                 </form:content>
+              </form:SimpleForm>
+
+</more:FragmentDefinition>

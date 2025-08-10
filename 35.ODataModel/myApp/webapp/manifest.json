@@ -68,9 +68,14 @@
                    "target":["Master","WelcomeDetail"]
                 },
                 {
-                    "pattern": "fruit/{fruitName}/{fruitId}",
+                    "pattern": "fruit/{fruitId}",
                     "name": "view2",
                     "target":["Master","Detail"]
+                },
+                {
+                    "pattern": "supplier/{suppId}",
+                    "name": "view3",
+                    "target":["Master","DetailDrillDwon"]
                 }
             ],
             "targets": {
@@ -87,6 +92,11 @@
                 "Detail":{
                     "viewId": "idView2",
                     "viewName": "view2",
+                    "controlAggregation": "detailPages"
+                },
+                "DetailDrillDwon":{
+                    "viewId": "idView3",
+                    "viewName": "view3",
                     "controlAggregation": "detailPages"
                 }
             }

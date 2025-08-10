@@ -64,7 +64,7 @@
                     "target":["Master","Detail"]
                 },
                 {
-                    "pattern": "supplier/:suppId:",
+                    "pattern": "supplier/:?SuppId:",
                     "name": "view3",
                     "target":["Master","DetailDrillDwon"]
                 }

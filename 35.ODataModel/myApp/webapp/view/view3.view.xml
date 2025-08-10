@@ -1,0 +1,11 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form='sap.ui.layout.form'
+    xmlns:more="sap.ui.core"
+    controllerName="fiori.comp.syz.fa.controller.view3">
+
+    <Page title="View-3 The supplier data" showNavButton="true" navButtonPress="onBackHistoryNav">
+     <ObjectHeader title="{empName}" intro= "{empId} " number="{salary}" numberUnit="{type}" icon="images/image1.png"></ObjectHeader>
+    
+    
+    </Page>
+
+</mvc:View>

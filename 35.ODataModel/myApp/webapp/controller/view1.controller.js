@@ -40,20 +40,20 @@ sap.ui.define(['fiori/comp/syz/fa/controller/BaseController','sap/ui/model/Filte
             // item with the index provided in the route
             let oItem = aItem[sItemIndex];
             // setting selection according to route navigation
-            oList.setSelectedItem(oItem);
+            oList.setSelectedItem(oItem); 
             },
             onSearch:function(oEvent){
                 var sQuery = oEvent.getParameter("query");
-                var oFilter1 = new Filter("CATEGORY",FilterOperator.Contains,sQuery);
-                var oFilter2 = new Filter("type",FilterOperator.Contains,sQuery);
+                var oFilter1 = new Filter("CATEGORY",FilterOperator.EQ,sQuery);
+                // var oFilter2 = new Filter("PRODUCT_ID",FilterOperator.EQ,sQuery);
             
-                let aFilter = [oFilter1,oFilter2];
+                // let aFilter = [oFilter1,oFilter2];
 
-                let oFilter = new Filter({
-                    filters : aFilter,
-                    and:false
-                })
-                this.getView().byId("idList1").getBinding("items").filter(oFilter);
+                // let oFilter = new Filter({
+                //     filters : aFilter,
+                //     and:false
+                // })
+                this.getView().byId("idList1").getBinding("items").filter(oFilter1);
             },
             // onTriggerDelete:function(oEvent){
             //     let oItemToBeDeleted = oEvent.getParameter("listItem");
