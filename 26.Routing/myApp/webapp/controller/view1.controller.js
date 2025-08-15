@@ -31,19 +31,29 @@ sap.ui.define(['fiori/comp/syz/fa/controller/BaseController','sap/ui/model/Filte
             // }
             onItemPress : function(oEvent){
                 let oList = oEvent.getParameter("listItem").getBindingContextPath();  
-        
+         
                 let myId = oList.split("/")[oList.split("/").length-1];
                 let sName =  oEvent.getParameter("listItem").getBindingInfo("title").binding.oValue
-            
-
+            //  this.getView().destroy();
+            // this.getOwnerComponent().destroy();
                 this.oRouter.navTo("view2",{
                     fruitName : sName ,
-                    fruitId : myId
+                    // fruitId : myId
+                    "?query":{
+                        fruitId : myId,
+                    },
+                    rest:"segment/by"
+                    
                 });
                 
                 // let oV2 = this.getView().getParent().getParent().getDetailPage("idView2");
                 // oV2.bindElement(oList);
                 // this.onNext();
+            },
+
+            onExit: function() {
+                
+                alert("view1 destroyed")
             }
         });
     }

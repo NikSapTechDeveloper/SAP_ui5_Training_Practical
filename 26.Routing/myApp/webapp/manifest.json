@@ -59,7 +59,7 @@
                    "target":["Master","WelcomeDetail"]
                 },
                 {
-                    "pattern": "{fruitName}/{fruitId}",
+                    "pattern": "{fruitName}/IDs:?query:/:rest*:",
                     "name": "view2",
                     "target":["Master","Detail"]
                 }

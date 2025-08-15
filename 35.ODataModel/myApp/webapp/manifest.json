@@ -76,6 +76,11 @@
                     "pattern": "supplier/{suppId}",
                     "name": "view3",
                     "target":["Master","DetailDrillDwon"]
+                },
+                {
+                    "pattern": "AddNewProduct",
+                    "name": "add",
+                    "target":["Master","AddNewProduct"]
                 }
             ],
             "targets": {
@@ -97,6 +102,11 @@
                 "DetailDrillDwon":{
                     "viewId": "idView3",
                     "viewName": "view3",
+                    "controlAggregation": "detailPages"
+                },
+                "AddNewProduct":{
+                    "viewId": "idVAddProduct",
+                    "viewName": "Add",
                     "controlAggregation": "detailPages"
                 }
             }

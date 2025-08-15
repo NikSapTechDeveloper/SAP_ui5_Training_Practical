@@ -75,6 +75,9 @@ sap.ui.define(['fiori/comp/syz/fa/controller/BaseController','sap/ui/model/Filte
                 // let oV2 = this.getView().getParent().getParent().getDetailPage("idView2");
                 // oV2.bindElement(oList);
                 // this.onNext();
+            },
+            onAddPress:function(){
+                this.oRouter.navTo("add");
             }
         });
     }

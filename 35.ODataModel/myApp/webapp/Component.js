@@ -33,7 +33,8 @@ sap.ui.define(['sap/ui/core/UIComponent'],
 
       //   return oView;
       // },
-      destroy: function () {
+      destroy: function() {
+        
 
       }
 
